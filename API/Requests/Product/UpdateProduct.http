@@ -1,0 +1,11 @@
+@host=https://localhost:7132
+
+PUT {{host}}/api/Product
+Content-Type: application/json
+
+{
+    "Id" : "guid",
+    "Description": "Nokia",
+    "Price": 1000
+}
+

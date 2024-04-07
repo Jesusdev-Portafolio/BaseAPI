@@ -1,0 +1,9 @@
+@host=https://localhost:7132
+
+POST {{host}}/api/Product
+Content-Type: application/json
+
+{
+    "Description": "Nokia",
+    "Price": 1000
+}

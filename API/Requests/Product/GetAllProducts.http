@@ -1,0 +1,11 @@
+@host=https://localhost:7132
+
+GET {{host}}/api/Product
+Content-Type: application/json
+
+{
+    "Page": 2,
+    "ItemsPerPage": 5
+}
+
+
