@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace Application.Features.Product.Commands
 {
     public record  UpdateProductCommand(
-        string Id,
+        int Id,
         string Description,
         double Price
         ) : IRequest<ProductResult>;

@@ -7,11 +7,8 @@ using System.Threading.Tasks;
 
 namespace Application.Features.Product.Commands
 {
-    public record CreateProductCommand
+    public record DeleteProductCommand
         (
-            string Description,
-            double Price
-        ) : IRequest<ProductResult>;
-
-  
+            int Id
+        ) : IRequest<int>;
 }

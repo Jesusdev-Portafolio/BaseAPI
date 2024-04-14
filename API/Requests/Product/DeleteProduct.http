@@ -1,5 +1,6 @@
 @host=https://localhost:7132
 
-GET {{host}}/api/Product/1
+DELETE {{host}}/api/Product/1
 Content-Type: application/json
+
 

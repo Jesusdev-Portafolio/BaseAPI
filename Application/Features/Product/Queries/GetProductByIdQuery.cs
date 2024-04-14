@@ -7,5 +7,5 @@ using System.Threading.Tasks;
 
 namespace Application.Features.Product.Queries
 {
-    public record GetProductByIdQuery(string Id) : IRequest<ProductResult>;
+    public record GetProductByIdQuery(int Id) : IRequest<ProductResult>;
 }

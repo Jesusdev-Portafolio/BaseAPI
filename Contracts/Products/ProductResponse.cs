@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 namespace Contracts.Products
 {
     public record ProductResponse(
+        int Id,
         string Description, 
         Double Price
         );

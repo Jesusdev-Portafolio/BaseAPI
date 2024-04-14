@@ -10,10 +10,10 @@ namespace API.Controllers
 {
     public class ProductController  : BaseApiController
     {
-        [HttpGet("{Id}")]
-        public async Task<ActionResult<ProductResponse>> GetProductById(int Id, GetProductByIdRequest request)
+        [HttpGet("{id}")]
+        public async Task<ActionResult<ProductResponse>> GetProductById(int id)
         {
-            GetProductByIdQuery query = Mapper!.Map<GetProductByIdQuery>(request); 
+            GetProductByIdQuery query = new(Id: id);
             ProductResult result = await Mediator!.Send(query);
             ProductResponse response = Mapper!.Map<ProductResponse>(result);
 
@@ -48,6 +48,15 @@ namespace API.Controllers
             ProductResponse response = Mapper!.Map<ProductResponse>(result);
 
             return Ok(response);
+        }
+
+        [HttpDelete("{id}")]
+        public async Task<ActionResult<ProductResponse>> DeleteProduct(int id)
+        {
+            DeleteProductCommand command = new(Id: id);
+            int result = await Mediator!.Send(command);
+       
+            return Ok(result);
         }
 
     }

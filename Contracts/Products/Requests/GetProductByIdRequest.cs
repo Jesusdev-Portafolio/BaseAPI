@@ -6,5 +6,5 @@ using System.Threading.Tasks;
 
 namespace Contracts.Products.Requests
 {
-    public record GetProductByIdRequest(string Id);
+    public record GetProductByIdRequest(int Id);
 }

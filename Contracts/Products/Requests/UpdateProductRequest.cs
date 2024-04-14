@@ -1,7 +1,7 @@
 ﻿namespace Contracts.Products.Requests
 {
     public record UpdateProductRequest(
-        string Id,
+        int Id,
         string Description,
         double Price
         );
