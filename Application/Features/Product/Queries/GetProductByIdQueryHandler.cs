@@ -1,4 +1,5 @@
-﻿using MediatR;
+﻿using Application.Common.Exceptions;
+using MediatR;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,6 +16,8 @@ namespace Application.Features.Product.Queries
 
         public async Task<ProductResult> Handle(GetProductByIdQuery request, CancellationToken cancellationToken)
         {
+
+
             var product = new ProductResult(   
                Id: request.Id,
                Description: "Xiaomi 14 PRO",

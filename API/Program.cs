@@ -13,6 +13,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 var app = builder.Build();
 {
+    app.UseExceptionHandler("/error");
     app.UseHttpsRedirection();
     app.UseAuthorization();
     app.MapControllers();
@@ -20,8 +21,4 @@ var app = builder.Build();
 }
 
 
-
-
-//TODO: ADD GIT IGNORE
-//TODO: CONFIGURE ALL LAYERS AND DEPENDENCIES BETWEEN EACH OTHERS
 //TODO: CONFIGURE EF
