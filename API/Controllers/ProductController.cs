@@ -4,7 +4,6 @@ using Application.Features.Product.Queries;
 using Contracts.Products;
 using Contracts.Products.Requests;
 using Microsoft.AspNetCore.Mvc;
-using System.Security.Cryptography.Xml;
 
 namespace API.Controllers
 {

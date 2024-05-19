@@ -11,7 +11,6 @@ namespace API.Controllers
         [Route("/error")]
         public IActionResult Error()
         {
-
             Exception? ex = HttpContext.Features.Get<IExceptionHandlerFeature>()?.Error;
    
             if(ex is not null && SoyErrorDeValidacion(ex))

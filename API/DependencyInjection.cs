@@ -2,7 +2,6 @@
 using API.Mappings;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Infrastructure;
-using System.Runtime.CompilerServices;
 
 namespace API
 {
@@ -18,5 +17,7 @@ namespace API
             
             return services;
         }
+
+       
     }
 }

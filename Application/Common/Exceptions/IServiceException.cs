@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Application.Common.Exceptions
 {
-    public interface IServiceException
+    public interface IServiceException 
     {
         public HttpStatusCode StatusCode { get; }
         public string ErrorMessage { get; }
